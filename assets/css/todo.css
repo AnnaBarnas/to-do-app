@@ -1,0 +1,92 @@
+
+body {
+	font-family: Amatic SC;
+	background: url(https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fb737234415fe3f104ca61ac833089b7&auto=format&fit=crop&w=1399&q=80);
+}
+
+h1 {
+	background-color: #5b9970;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.fa-edit {
+	float: right;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+li {
+	background-color: #fff;
+	line-height: 40px;
+	color: #666;
+}
+
+/*to style every second li*/
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	/*linear means that animation will move in a constant speed*/
+	opacity: 0;
+	/*opacity to hide the white icons-trash*/
+}
+
+/*when we hover over a li we want to select the span that's inside the li that's been hovered over*/
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+	/*opacity here is 1 to show trash-icons when we hover*/
+}
+
+input {
+	font-size: 18px;
+	color: #5b9970;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	font-family: Amatic SC;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+/*This style will only run when we focus on an input*/
+input:focus {
+	background-color: #fff;
+	border: 2px solid #5b9970;
+	outline: none;
+}
+
+#container {
+	width: 360px;
+	margin: 150px auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 80px rgba(0, 200, 0, 0.3);
+	border: 2px solid rgba(0, 200, 50, 0.2);
+
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
